@@ -1,7 +1,8 @@
 import { Col, Row, Input, Badge, Button } from 'antd';
 import { ShoppingCartOutlined, UserOutlined, SearchOutlined } from '@ant-design/icons';
 import logo from '../../assets/Logo.jpg';
-import './style.css';
+import "./HeaderComponentStyle.css";
+import MenuBar from '../headerComponent/MenuBar';
 
 const { Search } = Input;
 
@@ -46,6 +47,7 @@ const HeaderComponent = () => {
                     </Button>
                 </Col>
             </Row>
+            <MenuBar />
         </div>
     );
 };
