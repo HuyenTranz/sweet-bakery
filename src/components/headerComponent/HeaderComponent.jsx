@@ -1,8 +1,7 @@
 import { Col, Row, Input, Badge, Button } from 'antd';
 import { ShoppingCartOutlined, UserOutlined, SearchOutlined } from '@ant-design/icons';
 import logo from '../../assets/Logo.jpg';
-import "./HeaderComponentStyle.css";
-import MenuBar from '../headerComponent/MenuBar';
+import "./HeaderComponentStyle.scss";
 
 const { Search } = Input;
 
@@ -10,8 +9,8 @@ const HeaderComponent = () => {
     const onSearch = (value) => console.log(value);
 
     return (
-        <div>
-            <Row align="middle" className="header-container">
+        <div className="header-container">
+            <Row align="middle" >
                 {/* Logo */}
                 <Col span={6}>
                     <a href="/">
@@ -33,6 +32,7 @@ const HeaderComponent = () => {
 
                 {/* Icons + Button */}
                 <Col span={6} className="header-actions">
+                    <div className="contact">Liên hệ</div>
                     {/* Cart */}
                     <Badge count={0} size="small">
                         <ShoppingCartOutlined className="header-icon" />
@@ -47,7 +47,7 @@ const HeaderComponent = () => {
                     </Button>
                 </Col>
             </Row>
-            <MenuBar />
+            {/* <MenuBar /> */}
         </div>
     );
 };

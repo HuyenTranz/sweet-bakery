@@ -1,0 +1,104 @@
+/* Container */
+.header-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 120px;
+    background-color: #fff9f9;
+    z-index: 1000;
+
+    /* Logo */
+    .header-logo {
+        width: 120px;
+        height: auto;
+    }
+
+    /* Search */
+    .header-search {
+        text-align: center;
+
+        /* Custom search input + button */
+        .custom-search {
+            .ant-input-affix-wrapper {
+                border: 2px solid #d0021b !important;
+
+                &:hover,
+                &-focused {
+                    border-color: #d0021b !important;
+                    box-shadow: 0 0 0 2px rgba(208, 2, 27, 0.15) !important;
+                }
+            }
+
+            .ant-input-search-button {
+                background-color: #d0021b !important;
+                border-color: #d0021b !important;
+                color: #fff !important;
+
+                &:hover {
+                    background-color: #a00115 !important;
+                    border-color: #a00115 !important;
+                }
+            }
+        }
+    }
+
+    /* Actions (icons + button) */
+    .header-actions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+
+        /* Icons */
+        .header-icon {
+            font-size: 24px;
+            cursor: pointer;
+
+            :hover {
+                color: #d0021b;
+            }
+        }
+
+        /* liên hệ */
+        .contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold !important;
+            height: 40px !important;
+            position: relative; 
+            cursor: pointer;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 5px;
+                width: 0;
+                height: 2px;
+                background-color: #d0021b;
+                transition: width 0.3s ease;
+            }
+
+            &:hover {
+                color: #d0021b !important;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+
+        .order-btn {
+            background-color: #d0021b !important;
+            border-radius: 25px !important;
+            font-weight: bold !important;
+            height: 40px !important;
+            border: none !important;
+
+            &:hover {
+                background-color: #a00115 !important;
+            }
+        }
+    }
+}

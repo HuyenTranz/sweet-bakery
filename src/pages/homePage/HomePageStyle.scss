@@ -1,0 +1,36 @@
+/* home-container */
+.home-container {
+    padding: 0px 120px;
+
+    /* Slider */
+    .home-slider {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .filters {
+        display: flex;
+        justify-content: end;
+        gap: 12px;
+        padding-bottom: 10px;
+
+        select {
+            padding: 8px 16px;
+            border: 2px solid #d0021b;
+            border-radius: 4px;
+            background-color: white;
+            font-size: 14px;
+            min-width: 150px;
+
+            &:hover,
+            &-focused {
+                border-color: #d0021b !important;
+                box-shadow: 0 0 0 2px rgba(208, 2, 27, 0.15) !important;
+            }
+
+            option {
+                padding: 6px 12px;
+            }
+        }
+    }
+}

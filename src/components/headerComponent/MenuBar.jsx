@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { RightOutlined, LeftOutlined } from "@ant-design/icons";
-import "./MenuBarStyle.css";
+import "./MenuBarStyle.scss";
 import DropdownMenu from "../dropdownMenu/DropdownMenu";
 
 const items = [
